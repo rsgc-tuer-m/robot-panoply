@@ -8,7 +8,7 @@ Please plan one "round-ish" robot (fits within, or does not extend past, the bou
 
 Please plan one "rectangular-ish" robot (fits within the boundaries of a four-sided polygon with four right-angles).
 
-For each robot:
+For both robots:
 
 * Make a clear plan (identify input, process, and output).  This can take the form of a sketch on a co-ordinate system, or, a series of rough storyboards.
 * It is important that your robot be anchored to the origin – the top left corner, or (0, 0).
