@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class Robot_Panoply extends PApplet {
+public class Circular_Bot extends PApplet {
   public void setup() {
 
 ellipse(100, 100, 200, 200);
@@ -33,7 +33,7 @@ line(100, 150, 50, 175);
 
   public void settings() { size(400, 400); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "Robot_Panoply" };
+    String[] appletArgs = new String[] { "Circular_Bot" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {
