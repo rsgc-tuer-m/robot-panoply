@@ -65,12 +65,23 @@ ellipse(tx + tWidth/2, ty + 50, hDiameter - 25, hDiameter - 25);
 ellipse(fx, fy, fDiamter, fDiamter);
 noStroke();
 fill(255);
-rect(fx - fDiamter, ly + lHeight + 22, hDiameter + 5, hDiameter);
+rect(fx - fDiamter, ly + lHeight + 22, hDiameter, hDiameter);
 fill(0);
 stroke(5);
 point(fx - fDiamter + 26, ly + lHeight + 22);
 point(fx - fDiamter + 24 + fDiamter, ly+ lHeight + 22);
 line(fx - fDiamter + 26, ly + lHeight + 22, fx - fDiamter + 24 + fDiamter, ly+ lHeight + 22); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
+// draw left foot
+fill(255, 174, 0);
+ellipse(fx - 75, ly + lHeight + fDiamter/2 - 10, fDiamter, fDiamter);
+fill(255);
+noStroke();
+rect(fx - 75 - fDiamter, ly + lHeight + fDiamter/2 - 3, hDiameter + 3, fDiamter);
+stroke(5);
+fill(0);
+point(fx - 100, ly + lHeight + fDiamter/2 - 5);
+point(fx - 50, ly + lHeight + fDiamter/2 - 5);
+line(fx - 100, ly + lHeight + fDiamter/2 - 4, fx - 50, ly + lHeight + fDiamter/2 - 4);
 //draw legs
 stroke(5);
 fill(209);
