@@ -61,6 +61,8 @@ rect(ax + aWidth + tWidth, ay - 5, aWidth, aHeight); // right Arm
 // draw Iron Man type circle in the middle
 fill(255, 174, 0);
 ellipse(tx + tWidth/2, ty + 50, hDiameter - 25, hDiameter - 25);
+ellipse(tx + tWidth/2 - 65, ty + 50, hDiameter/2 - 10, hDiameter/2 - 10);
+ellipse(tx + tWidth/2 + 65, ty + 50, hDiameter/2 - 10, hDiameter/2 - 10);
 //draw feet
 ellipse(fx, fy, fDiamter, fDiamter);
 noStroke();
