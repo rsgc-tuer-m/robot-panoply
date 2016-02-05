@@ -1,8 +1,9 @@
 size(600,600);
 background(201);
-fill(146);
+fill(90);
 stroke(146);
 triangle(100,100,500,100,300,300);
+fill(146);
 rect(200,200,200,200);
 stroke(0);
 fill(0);
