@@ -1,22 +1,41 @@
 size(displayWidth,displayHeight);
 noStroke();
+//Background decor
+
+
+fill(#74B3FF);
+rect(0,0,10000,600);
+
+fill(#c2b280);
+ellipse(640,600,2800,500);
 
 //baseShadow
+
+fill(79);
+ellipse(300,550,400,100);
+
 fill(70);
-ellipse(300,550,300,50);
+ellipse(300,550,310,60);
+
 fill(50);
-ellipse(300,550,250,30);
+ellipse(300,550,260,40);
+
 fill(20);
-ellipse(300,550,230,20);
+ellipse(300,550,240,30);
+
 
 
 //Portal Shadow
+
 fill(70);
-ellipse(1100,550,190,50);
+ellipse(1100,550,200,80);
+
 fill(50);
-ellipse(1100,550,130,30);
+ellipse(1100,550,140,60);
+
 fill(20);
-ellipse(1100,550,120,20);
+ellipse(1100,550,130,40);
+filter( BLUR, 5 );
  
  //Portal Legs
 fill(#002CFF);
@@ -55,12 +74,17 @@ ellipse(1100,320,25,25);
 textSize(32);
 fill(0);
 text("BB-8", 100, 100);
+//text
+textSize(32);
+fill(0);
+text("Turret", 900, 100);
 
 //antenna
 fill(50);
 rect(325,150,2,40);
 fill(50);
 rect(335,160,3,60);
+
 //head
 fill(244);
 ellipse(300,250,150,150);
@@ -117,3 +141,6 @@ fill(#FC7303);
 ellipse(295,390,140,190);
 fill(240);
 ellipse(295,390,110,160);
+
+
+ 
