@@ -23,6 +23,16 @@ int ax = 165;
 int ay = 125;
 int aWidth = 30;
 int aHeight = 240;
+//ints for legs
+int lx = tx + aWidth + 83;
+int ly = ty + tHeight;
+int lWidth = tWidth/4;
+int lHeight = tHeight/2;
+//ints for feet
+int fx = lx + lWidth/2;
+int fy = ly + lHeight + lWidth/2 - 10;
+int fDiamter = lWidth;
+
 fill(255);
 rect(tx, ty, tWidth, tHeight);
 ellipse(hx, hy - 10, hDiameter, hDiameter);
@@ -34,7 +44,6 @@ ellipse(ex + 40, ey, eDiameter, eDiameter);
 fill(209);
 rect(mx, my, mWidth, mHeight);
 // draw lines in the mouth creating the old school boxy robot look
-line(mx + 4, my, mx + 4, my + mHeight);
 line(mx + 8, my, mx + 8, my + mHeight);
 line(mx + 12, my, mx + 12, my + mHeight);
 line(mx + 16, my, mx + 16, my + mHeight);
@@ -45,7 +54,6 @@ line(mx + 32, my, mx + 32, my + mHeight);
 line(mx + 36, my, mx + 36, my + mHeight);
 line(mx + 40, my, mx + 40, my + mHeight);
 line(mx + 44, my, mx + 44, my + mHeight);
-line(mx + 48, my, mx + 48, my + mHeight);
 //draw arms
 fill(209);
 rect(ax, ay - 5, aWidth, aHeight); // left arm
@@ -53,4 +61,18 @@ rect(ax + aWidth + tWidth, ay - 5, aWidth, aHeight); // right Arm
 // draw Iron Man type circle in the middle
 fill(255, 174, 0);
 ellipse(tx + tWidth/2, ty + 50, hDiameter - 25, hDiameter - 25);
+//draw feet
+ellipse(fx, fy, fDiamter, fDiamter);
+noStroke();
+fill(255);
+rect(fx - fDiamter, ly + lHeight + 22, hDiameter + 5, hDiameter);
+fill(0);
+stroke(5);
+point(fx - fDiamter + 26, ly + lHeight + 22);
+point(fx - fDiamter + 24 + fDiamter, ly+ lHeight + 22);
+line(fx - fDiamter + 26, ly + lHeight + 22, fx - fDiamter + 24 + fDiamter, ly+ lHeight + 22); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
 //draw legs
+stroke(5);
+fill(209);
+rect(lx, ly, tWidth/4, tHeight/2); //left leg
+rect(lx - aWidth - 45, ly, lWidth, lHeight); //right leg
