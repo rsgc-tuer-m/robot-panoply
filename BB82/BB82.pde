@@ -10,7 +10,7 @@ rect(0,0,10000,600);
 fill(#c2b280);
 ellipse(640,600,2800,500);
 
-//baseShadow
+//BB8Shadow
 
 
 fill(#B7AA85);
@@ -24,6 +24,18 @@ ellipse(300,550,200,20);
 fill(#393427);
 ellipse(300,545,110,10);
 
+//R2shadow
+
+fill(#B7AA85);
+ellipse(975,550,250,80);
+fill(#8B836C);
+ellipse(975,550,230,40);
+
+fill(#746C55);
+ellipse(975,550,200,20);
+
+fill(#393427);
+ellipse(975,545,110,10);
 filter( BLUR, 5 );
  
 
@@ -33,7 +45,7 @@ filter( BLUR, 5 );
 //text
 textSize(100);
 fill(255);
-text("BB-8", 220, 100);
+text("BB-8", 190, 100);
 
 //text2
 textSize(100);
@@ -122,18 +134,36 @@ fill(250);
   arc(980, 270, 185, 185, -PI, 0);  // upper half of circle
   fill(240);
   arc(980, 270, 170, 170, -PI, 0);  // upper half of circle
-  
+ 
+//legs
+fill(100);
+rect(870,280,40,70);
+fill(150);
+rect(880,280,20,220);
+fill(100);
+rect(1050,280,40,70);
+fill(150);
+rect(1060,280,20,220);
+
 //Body
 fill(250);
   rect(887.5,270,185,200);
   fill(240);
   rect(898,280,165,180);
+   fill(100);
+  arc(980, 470, 175, 10, 0, PI, 0);
+  fill(#0016A0);
+    rect(887.5,270,185,5);
+fill(#0016A0);
+  rect(908,290,145,160);
   
+fill(240);
+  rect(923,300,115,140);
 //Eye
 fill(#0016A0);
-  ellipse(980,220,55,55);
+  ellipse(980,215,55,55);
   fill(0);
-  ellipse(980,220,45,45);
+  ellipse(980,215,45,45);
   fill(120);
 
 //cam
