@@ -3,7 +3,6 @@ noStroke();
 fill(255,0,0);
 rect(200,200,200,200);
 
-<<<<<<< HEAD
 rect(225,120,40,80);
 rect(335,120,40,80);
 fill(255);
@@ -27,7 +26,7 @@ rect(235,400,40,50);
 fill(0,0,255);
 rect(100,235,100,50);
 rect(400,235,100,50);
-=======
+
 // Add code below to make your preferred
 // robot, according to your plan.
 //
@@ -38,4 +37,3 @@ rect(400,235,100,50);
 // NOTE: Please commit to GitHub repository
 //       in stages – as each "part" of your
 //       robot is finished.
->>>>>>> rsgc-ics2o-spring2016/master
