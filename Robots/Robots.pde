@@ -1,13 +1,15 @@
 // Create the canvas
-size(600, 600);
+size(400, 400);
 
 // Add code below to make your preferred
 // robot, according to your plan.
-//
-// NOTE: Before you begin coding, please
-//       post a clear photograph of your plans
-//       to Sesame.
-//
-// NOTE: Please commit to GitHub repository
-//       in stages – as each "part" of your
-//       robot is finished.
+
+// White background
+background(255);
+
+// Draw head
+ellipse(200, 100, 100, 100);
+
+// Draw vision bar (eye)
+rectMode(CENTER);
+rect(200, 85, 50, 15);
