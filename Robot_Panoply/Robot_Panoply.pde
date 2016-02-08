@@ -1,10 +1,10 @@
 void setup() {
-  size(300,300);
-  background(0);
+  size(1000,1000);
+  background(128);
 }
 void draw() {
-  stroke(255, 0, 0);
-  strokeWeight(4);
+  stroke(0,255, 125);
+  strokeWeight(10);
   smooth();
   if(mousePressed) {
     line(pmouseX, pmouseY, mouseX, mouseY);
