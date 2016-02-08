@@ -6,7 +6,7 @@ size(600, 600);
 //
 // NOTE: Before you begin coding, please
 //       post a clear photograph of your plans
-//       to GitHub.
+//       to Sesame.
 //
 // NOTE: Please commit to GitHub repository
 //       in stages – as each "part" of your
