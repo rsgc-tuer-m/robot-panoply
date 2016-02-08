@@ -253,4 +253,5 @@ fill(120);
 ellipse(970, 210, 20, 15);
 fill(150);
 ellipse(970, 209, 10, 5);
-filter(GRAY); 
+
+ 
