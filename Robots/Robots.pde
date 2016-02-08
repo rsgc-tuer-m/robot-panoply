@@ -19,3 +19,8 @@ fill(200);  // grey
 ellipse(200, 400, 300, 600);
 fill(255);  // white
 ellipse(200, 400, 300, 500);
+
+// Side wheels
+fill(100); // darker grey
+ellipse(60, 350, 100, 100); 
+ellipse(340, 350, 100, 100); 
