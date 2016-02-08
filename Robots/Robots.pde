@@ -1,22 +1,32 @@
-// Create the canvas
-size(600, 600);
+// runs once when the program is started
+void setup() {
 
-// create all white rectangles (head, body, and arms)
-rect(25, 0, 150, 50);
-rect(25, 50, 150, 100);
-rect(0, 50, 25, 75);
-rect(175, 50, 25, 75);
+  // Create the canvas
+  size(400, 400);
+  background(255);
+  drawAt(0, 0);
+}
 
-// create all dark grey rectangles (hands)
-fill(100);
-rect(0, 125, 25, 25);
-rect(175, 125, 25, 25);
+// draws robot at specified location
+void drawAt(int posX, int posY) {
+  
+  // create all white rectangles (head, body, and arms)
+  rect(posX + 25, posY + 0, 150, 50);
+  rect(posX + 25, posY + 50, 150, 100);
+  rect(posX + 0, posY + 50, 25, 75);
+  rect(posX + 175, posY + 50, 25, 75);
 
-// create all light grey rectangles (pants)
-fill(200);
-rect(25, 150, 75, 100);
-rect(100, 150, 75, 100);
+  // create all dark grey rectangles (hands)
+  fill(100);
+  rect(posX + 0, posY + 125, 25, 25);
+  rect(posX + 175, posY + 125, 25, 25);
 
-// create all ellipses (eyes)
-ellipse(50, 25, 25, 25);
-ellipse(150, 25, 25, 25);
+  // create all light grey rectangles (pants)
+  fill(200);
+  rect(posX + 25, posY + 150, 75, 100);
+  rect(posX + 100, posY + 150, 75, 100);
+
+  // create all ellipses (eyes)
+  ellipse(posX + 50, posY + 25, 25, 25);
+  ellipse(posX + 150, posY + 25, 25, 25);
+}
