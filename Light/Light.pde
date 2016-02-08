@@ -25,15 +25,33 @@ ellipse(650, 380,300,300);
 
 
 
-//building
+//buildingBB8
 fill(20);
 rect(90,270,50,120);
+fill(200);
+rect(0,230,50,150);
+fill(80);
+rect(60,200,50,200);
+fill(80);
+rect(60,100,40,200);
+fill(80);
+rect(60,20,20,200);
 fill(20);
 rect(100,240,10,140);
 fill(40);
 rect(10,290,50,120);
 fill(160);
 rect(40,250,30,140);
+
+//buildingR2D2
+fill(20);
+rect(1200,250,50,140);
+
+fill(80);
+rect(1230,100,50,400);
+fill(80);
+rect(1270,50,5,400);
+
 //sand
 fill(#c2b280);
 ellipse(640, 600, 2600, 500);
@@ -235,3 +253,4 @@ fill(120);
 ellipse(970, 210, 20, 15);
 fill(150);
 ellipse(970, 209, 10, 5);
+filter(GRAY);
