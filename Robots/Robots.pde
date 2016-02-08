@@ -1,13 +1,16 @@
-// Create the canvas
-size(600, 600);
-
-// Add code below to make your preferred
-// robot, according to your plan.
-//
-// NOTE: Before you begin coding, please
-//       post a clear photograph of your plans
-//       to Sesame.
-//
-// NOTE: Please commit to GitHub repository
-//       in stages – as each "part" of your
-//       robot is finished.
+size(600,600);
+background(255);
+ellipse(75,75,80,80);
+rect(73,115,5,100);
+rect(59,200,34,80);
+rect(59,280,1,60);
+rect(92,280,1,60);
+fill(#0AC111);
+ellipse(75,250,10,10);
+fill(#D6F71E);
+ellipse(75,235,10,10);
+fill(#F7240C);
+ellipse(75,220,10,10);
+fill(0);
+rect(92,9,1,30);
+rect(59,9,1,30);
