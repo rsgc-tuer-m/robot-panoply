@@ -1,18 +1,42 @@
 size(displayWidth, displayHeight);
 noStroke();
 
+
+
   //Background 
 
 //sky
 fill(#74B3FF);
 rect(0, 0, 10000, 600);
 
-//sand
-fill(#c2b280);
-ellipse(640, 600, 2800, 500);
+fill(#74B3FF);
+ellipse(650, 380,350,350);
+
+fill(#6FB1FF);
+ellipse(650, 380,700,700);
+
 
 //sun
+fill(#FFF2C9);
+ellipse(650, 380,350,350);
+fill(#FFF7E0);
+ellipse(650, 380,300,300);
 
+
+
+
+//building
+fill(20);
+rect(90,270,50,120);
+fill(20);
+rect(100,240,10,140);
+fill(40);
+rect(10,290,50,120);
+fill(160);
+rect(40,250,30,140);
+//sand
+fill(#c2b280);
+ellipse(640, 600, 2600, 500);
 
   //Lighting
 
@@ -26,6 +50,7 @@ fill(250);
 arc(980, 270, 185, 185, -PI, 0);  // upper half of circle
 
 //light text
+
 //LBB8 text
 textSize(100);
 fill(255);
@@ -63,7 +88,6 @@ ellipse(976, 550, 240, 20);
 fill(#393427);
 ellipse(976, 545, 110, 10);
 filter( BLUR, 3 );
-
 //Text
    //text BB-8
 textSize(100);
