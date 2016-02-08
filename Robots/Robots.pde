@@ -31,7 +31,11 @@ fill(255);
 noStroke();
 rect(200, 175, 200, 200);
 fill(255);
+//Make left robot leg
+fill(0);
+rect(100, 300, 100, 150);
+fill(0);
 //Make right robot leg
 fill(0);
-rect(200, 300, 100, 150);
+rect(400, 300, 100, 150);
 fill(0);
