@@ -60,6 +60,9 @@ float off25;
 float off26;
 float off27;
 float off28;
+float off29;
+float off30;
+float off31;
 
 void setup() { //runs once
   size(800, 800);
@@ -117,6 +120,16 @@ void setup() { //runs once
    off20 = y + 22;
    off21 = x + 26;
    off22 = x + 24;
+   off23 = x + 75;
+   off24 = y + 3;
+   off25 = 3*horizontalScale;
+   off26 = 45;
+   off27 = 10;
+   off28 = 100;
+   off29 = 4;
+   off30 = 50;
+   off31 = 75;
+
 
 
    fill(255);
@@ -148,9 +161,9 @@ void setup() { //runs once
   rect(ax + aWidth + tWidth, ay - off13, aWidth, aHeight); // right Arm
   // draw Iron Man type circle in the middle
   fill(255, 174, 0);
-  ellipse(tx + tWidth/2, ty + off14, hDiameter - off15, hDiameter - off15);
-  ellipse(tx + tWidth/2 - off16, ty + off14, hDiameter/2 - off18, hDiameter/2 - off18);
-  ellipse(tx + tWidth/2 + off17, ty + off14, hDiameter/2 - off18, hDiameter/2 - off18);
+  ellipse(tx + tWidth/2, ty + off14 - off30, hDiameter - off15, hDiameter - off15);
+  ellipse(tx + tWidth/2 - off16 - off26, ty + off14 - off30, hDiameter/2 - off18, hDiameter/2 - off18);
+  ellipse(tx + tWidth/2 + off17 - off31 - off29 - 2, ty + off14 - off30, hDiameter/2 - off18, hDiameter/2 - off18);
   //draw feet
   ellipse(fx, fy, fDiamter, fDiamter);
   noStroke();
@@ -158,21 +171,24 @@ void setup() { //runs once
   rect(fx - fDiamter, ly + lHeight + off19, hDiameter, hDiameter);
   fill(0);
   stroke(5);
-  line(fx - fDiamter + off21, ly + lHeight + off20, fx + 24, ly+ lHeight + 22); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
+  line(fx - fDiamter + off21 - off28, ly + lHeight + off20 - off28, fx + off22 - off28, ly + lHeight + off20 - off28); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
   // draw left foot
   fill(255, 174, 0);
-  ellipse(fx - 75, ly + lHeight + fDiamter/2 - 10, fDiamter, fDiamter);
+  ellipse(fx - off23 + off28, ly + lHeight + fDiamter/2 - off27, fDiamter, fDiamter);
   fill(255);
   noStroke();
-  rect(fx - 75 - fDiamter, ly + lHeight + fDiamter/2 - 3, hDiameter + 3, fDiamter);
+  rect(fx - off23 - fDiamter, ly + lHeight + fDiamter/2 - off24 - off30, hDiameter + off25, fDiamter);
   stroke(5);
   fill(0);
-  point(fx - 100, ly + lHeight + fDiamter/2 - 5);
-  point(fx - 50, ly + lHeight + fDiamter/2 - 5);
-  line(fx - 100, ly + lHeight + fDiamter/2 - 4, fx - 50, ly + lHeight + fDiamter/2 - 4);
+  line(fx - off28, ly + lHeight + fDiamter/2 - off29, fx - off30, ly + lHeight + fDiamter/2 - off29);
+  fill(255);
+  noStroke();
+  rect(fx - off23 - fDiamter + off28, ly + lHeight + fDiamter/2 - off24 + off28, hDiameter + off25, fDiamter);
+  //fill(0);
+  rect(fx - off23 - fDiamter + off28*2, ly + lHeight + fDiamter/2 - off24 + off28 + 1, hDiameter + off25, fDiamter);
 //draw legs
   stroke(5);
   fill(209);
   rect(lx, ly, tWidth/4, tHeight/2); //left leg
-  rect(lx - aWidth - 45, ly, lWidth, lHeight); //right leg
+  rect(lx - aWidth - off26, ly, lWidth, lHeight); //right leg
  }
