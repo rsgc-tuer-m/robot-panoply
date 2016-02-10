@@ -1,13 +1,16 @@
 //this function runs once in your sketch
 void setup() {
-
+  //fullscreen replaces size in this sketch, corrosponds to screen resolution
+fullScreen();
   //create canvas
-  size(displayWidth, displayHeight);
+  
+ //removing stroke from everything
   noStroke();
   //background
   background(#6FB1FF);
   
-  //Unused Code
+  //Unused Background Code
+  //Needs to be reconfigured for proper scalability
   
  
 
@@ -44,14 +47,16 @@ void setup() {
   //fill(80);
   //rect(1270, 50, 5, 400);
 
-  ////sand
-  //fill(#c2b280);
-  //ellipse(640, 600, 2600, 500);
+ 
 
 //BG
 fill(#86BDFF);
 rect(0, 0,displayWidth, displayHeight);
-  filter( BLUR, 3 );
+  //sand
+  fill(#c2b280);
+  ellipse(displayWidth/2, displayHeight/1.3 , displayWidth *2 , displayHeight/2);
+
+
    //Resolutions: 640x360=.5 1280x720=1 1920x1080=1.5 2560x1440=2 3840x2160=3
    
    int r = 1;
@@ -67,6 +72,7 @@ void drawAt(int x, int y) {
   //distance between bots
   int d = 300;
   int r = 1;
+  
   //size of bots
   scale(1.6 * r);
 
@@ -74,14 +80,14 @@ void drawAt(int x, int y) {
 
   //lightBB
   fill(245);
-  arc(x + 300, y + 270, 185, 185, -PI, 0);  // upper half of circle
+  arc(x + 300 * r , y + 270 * r, 185, 185, -PI, 0);  // upper half of circle
 
   //LightR2
 
   fill(250);
   arc(x + 980-d, y+ 270, 185, 185, -PI, 0);  // upper half of circle
 
-  filter( BLUR, 6 );
+  filter( BLUR, 4 );
   //BB8Shadow
 
 
@@ -110,7 +116,7 @@ void drawAt(int x, int y) {
   ellipse(x+ 976, y+ 545, 110, 10 );
 
 
-  filter( BLUR, 3 );
+  
 
   //antenna
   fill(50);
