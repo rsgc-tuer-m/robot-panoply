@@ -67,7 +67,8 @@ float off31;
 void setup() { //runs once
   size(800, 800);
   background(255);
-  drawAt(100, 100, 1, 1);
+  //drawAt(100, 100, 1, 1);
+  drawAt2(0, 0, 1, 1);
 
 }
 
@@ -191,4 +192,22 @@ void setup() { //runs once
   fill(209);
   rect(lx, ly, tWidth/4, tHeight/2); //left leg
   rect(lx - aWidth - off26, ly, lWidth, lHeight); //right leg
+ }
+
+ void drawAt2(int cx, int cy, float cHorizontal, float cVertical) { //function drawing circlular bot
+   //draw head
+   stroke(5);
+   fill(255);
+   ellipse(cx + width/2, cy + height/2, 100*cHorizontal, 100*cVertical);
+   //draw eyes
+   fill(0);
+   ellipse(cx + width/2 + 5, cy + height/2, 25*cHorizontal, 25*cVertical);
+   //draw mouth
+   fill(209,209,209);
+   rect(cx + 400 - 20, cy + 400 + 25, 50*cHorizontal, 10*cVertical);
+   //draw BB8 style body
+   fill(255);
+   ellipse(cx + width/2, cy + height/2 + 150 + 50, 300*cHorizontal, 300*cVertical);
+
+
  }
