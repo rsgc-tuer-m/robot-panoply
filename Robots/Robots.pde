@@ -4,8 +4,8 @@ void setup() {
   size(1200, 1200);
   background(201);
 drawAt(500,50, 0.5, 0.5);
-//drawAt(400,50);
-//drawAt(800,50);
+drawAt(400,50, 1, 1);
+drawAt(800,50, 0.25,0.25);
 }
 //draw my robot at specified location
 void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale ) {
@@ -41,5 +41,4 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   rect(xAnchor + 400*horizontalScale,  yAnchor + 225*verticalScale, 105*horizontalScale, 50*verticalScale);
   fill(0);
   fill(0);
-  ellipse(xAnchor, yAnchor, 5, 5);
 }
