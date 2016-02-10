@@ -68,7 +68,7 @@ void setup() { //runs once
   size(800, 800);
   background(255);
   //drawAt(100, 100, 1, 1);
-  drawAt2(0, 0, 1, 1);
+  drawAt2(0, 0, 0.5, 0.5);
 
 }
 
@@ -198,16 +198,17 @@ void setup() { //runs once
    //draw head
    stroke(5);
    fill(255);
-   ellipse(cx + width/2, cy + height/2, 100*cHorizontal, 100*cVertical);
+   ellipse(cx + (width/2)*cHorizontal, cy + (height/2)*cVertical, 100*cHorizontal, 100*cVertical);
    //draw eyes
    fill(0);
-   ellipse(cx + width/2 + 5, cy + height/2, 25*cHorizontal, 25*cVertical);
+   ellipse(cx + (width/2 + 5) * cHorizontal, cy + (height/2)*cVertical, 25*cHorizontal, 25*cVertical);
    //draw mouth
    fill(209,209,209);
-   rect(cx + 400 - 20, cy + 400 + 25, 50*cHorizontal, 10*cVertical);
+   rect(cx + (380)*cHorizontal, cy + (425)*cVertical, 50*cHorizontal, 10*cVertical);
    //draw BB8 style body
    fill(255);
-   ellipse(cx + width/2, cy + height/2 + 150 + 50, 300*cHorizontal, 300*cVertical);
-
+   ellipse(cx + (width/2)*cHorizontal, cy + (height/2 + 200)*cVertical, 300*cHorizontal, 300*cVertical);
+   fill(0);
+   ellipse(cx, cy, 15, 15);
 
  }
