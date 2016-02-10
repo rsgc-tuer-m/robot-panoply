@@ -1,18 +1,40 @@
 //this function runs once in your sketch
 void setup() {
-  //fullscreen replaces size in this sketch, corrosponds to screen resolution
-fullScreen();
-  //create canvas
   
- //removing stroke from everything
-  noStroke();
-  //background
-  background(#6FB1FF);
-  
-  //Unused Background Code
-  //Needs to be reconfigured for proper scalability
-  
+  //Set sketch as a resizable window (W.I.P Mostly Broken) (only works with size, Not fullscreen)
+  //Set to comment if fullscreen() run
  
+    //surface.setResizable(true);
+ 
+  //Sketch Size
+  //fullscreen replaces size in this sketch, corrosponds to screen resolution
+  //set to comment when size() in use
+  
+  fullScreen();
+  
+  //Size of sketch when not in fullscreen (Debug/ Broken)
+  //set to comment when fullscreen() is in use
+    //size(displayWidth , displayHeight);
+
+  //Variable Index
+  
+  //r = resolution Scaler (W.I.P IGNORE)
+  //d = distance between Bots (default 300)
+  //x = horizontal offset (adjust drawAt x)
+  //y = vertical offset (adjust drawAt y)
+
+  //removing stroke from everything (leave on)
+  noStroke();
+  
+  //background sky color
+  background(#6FB1FF);
+
+  //Outdated Background Code
+  //Needs to be reconfigured for proper scalability
+  //Multiply by X and Y
+  //Sand Implimented
+  //building implimentation needs significant work.
+  //building spacing not implimented
 
   ////sun
   //fill(#FFF2C9);
@@ -47,49 +69,63 @@ fullScreen();
   //fill(80);
   //rect(1270, 50, 5, 400);
 
- 
 
-//BG
-fill(#86BDFF);
-rect(0, 0,displayWidth, displayHeight);
-  //sand
+
+  //BG Rectangle 10x Display
+  
+  fill(#86BDFF);
+  rect(0, 0, displayWidth * 10, displayHeight * 10);
+
+  //Sand Texture (should span accross screen)
+  
   fill(#c2b280);
-  ellipse(displayWidth/2, displayHeight/1.3 , displayWidth *2 , displayHeight/2);
+  ellipse(displayWidth/2, displayHeight/1, displayWidth *2, displayHeight);
 
+  //Resolution Scaling (W.I.P) : 640x360=.5 1280x720=1 1920x1080=1.5 2560x1440=2 3840x2160=3
+  //Leave at default (1)
+  int r = 1; 
 
-   //Resolutions: 640x360=.5 1280x720=1 1920x1080=1.5 2560x1440=2 3840x2160=3
-   
-   int r = 1;
-   
-  //tells to draw robots at location
-  drawAt(-30 * r, -10 * r);
-   drawAt(-60 * r, 100 * r);
-    drawAt(-180 * r, -150 * r);
+  //tells to draw robots at multiple locations
+  //blurring broken
+  //help
+  
+  drawAt(-30 * r, -10 * r); //draw 1
+  drawAt(-60 * r, 100 * r); //draw 2
+  drawAt(-180 * r, -150 * r); //draw 3
 }
 
-//draw at specified location
+//draws at specified location
+
 void drawAt(int x, int y) {
-  //distance between bots
-  int d = 300;
-  int r = 1;
   
-  //size of bots
+  //distance between the 2 bots
+
+  int d = 300;
+
+  //Sketch Resolution Scaler
+  int r = 1;
+
+  //Scale of bots
   scale(1.6 * r);
 
-  //Lighting
+  //Lighting, bloom effects
+  //slightly fiddly, blur broken
+  //(W.I.P)
 
   //lightBB
   fill(245);
-  arc(x + 300 * r , y + 270 * r, 185, 185, -PI, 0);  // upper half of circle
+  arc(x + 300, y + 270, 185, 185, -PI, 0);  // upper half of circle
 
   //LightR2
 
   fill(250);
   arc(x + 980-d, y+ 270, 185, 185, -PI, 0);  // upper half of circle
 
-  filter( BLUR, 4 );
-  //BB8Shadow
+  //Background Blur
 
+  filter( BLUR, 4 );
+
+  //BB8Shadow
 
   fill(#B7AA85);
   ellipse(x+ 300, y+ 550, 250, 80 );
@@ -115,17 +151,14 @@ void drawAt(int x, int y) {
   fill(#393427);
   ellipse(x+ 976, y+ 545, 110, 10 );
 
-
-  
-
-  //antenna
+  //BB8antenna
   fill(50);
   rect(x+ 325, y+ 160, 2, 40 );
   fill(50);
   rect(x+ 335, y+ 155, 3, 60 );
 
 
-  //ROBOT 1
+  //ROBOT 1 (BB8)
 
   //body
   fill(250);
@@ -148,7 +181,7 @@ void drawAt(int x, int y) {
   fill(100);
   arc(x+ 300, y+ 270, 175, 10, 0, PI, 0);
 
-  //eyering
+  //coloreyering
   fill(#FC7303);
   ellipse(x+ 300, y+ 215, 50, 50);
 
@@ -192,7 +225,7 @@ void drawAt(int x, int y) {
   fill(190);
 
 
-  //ROBOT 2
+  //ROBOT 2 (R2D2)
 
   //Head
   fill(250);
