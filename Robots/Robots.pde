@@ -60,7 +60,7 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   
   fill(210, 105, 30);
   noStroke();
-  rect(xAnchor  + 200 * horizontalScale, yAnchor * verticalScale + 175, xAnchor * horizontalScale + 200, yAnchor * verticalScale + 200);
+  rect(xAnchor  + 200 * horizontalScale, yAnchor + 175 * verticalScale, 200 * horizontalScale, 200 * verticalScale);
   fill(210, 105, 30);
   
   //mark the spot where we should start drawing from
@@ -69,16 +69,16 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   
   
   // Make a circle
-  //noStroke();
-  //fill(210, 105, 30);
-  //ellipse(400, 100, 85, 85);
-  //fill(210, 105, 30);
+  noStroke();
+  fill(210, 105, 30);
+  ellipse(xAnchor + 400 * horizontalScale, yAnchor + 100 * verticalScale, 85 * horizontalScale, 85 * verticalScale);
+  fill(210, 105, 30);
   
-  //// Make a circle
-  //noStroke();
-  //fill(210, 105, 30);
-  //ellipse(200, 100, 85, 85);
-  //fill(210, 105, 30);
+  // Make a circle
+  noStroke();
+  fill(210, 105, 30);
+  ellipse(xAnchor + 200 * horizontalScale, yAnchor + 100 * verticalScale, 85 * horizontalScale, 85 * verticalScale);
+  fill(210, 105, 30);
   
   ////Make a rectangle connecting the eyes
   //fill(210, 105, 30);
