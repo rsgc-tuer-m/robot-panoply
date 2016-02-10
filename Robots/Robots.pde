@@ -1,44 +1,50 @@
-size (600, 600); //canvas size
+void setup () {
+  size (1000, 700); //canvas size
+  background (255); 
+  drawAt(50, 50); 
+}
+//Draw At
+void drawAt(int x, int y) {
+  fill(100);
+  ellipse(x+300, y+400, 400, 400); //body 
 
-fill(100);
-ellipse(300, 400, 400, 400); //body 
+  fill(255); 
+  ellipse(x+300, y+150, 150, 150);//head
 
-fill(255); 
-ellipse(300, 150, 150, 150);//head
+  line(x+356, y+100, x+400, y+20); //antenae
 
-line(356, 100, 400, 20); //antenae
+  fill(20); 
+  ellipse(x+275, y+130, 20, 25);//left eye
 
-fill(20); 
-ellipse(275, 130, 20, 25);//left eye
+  fill(20); 
+  ellipse(x+325, y+130, 20, 25); //right eye
 
-fill(20); 
-ellipse(325, 130, 20, 25); //right eye
+  triangle(x+300, y+140, x+290, y+160, x+310, y+160); //nose
 
-triangle(300, 140, 290, 160, 310, 160); //nose
+  //left Arm
+  line(x+127, y+300, x+100, y+250); //left arm
+  line(x+100, y+250, x+110, y+238); //left arm finer right
+  line(x+100, y+250, x+90, y+238); //left arm finger left
+  line(x+100, y+250, x+100, y+234); //left arm finger middle
 
-//left Arm
-line(127, 300, 100, 250); //left arm
-line(100, 250, 110, 238); //left arm finer right
-line(100, 250, 90, 238); //left arm finger left
-line(100, 250, 100, 234); //left arm finger middle
+  //right arm
+  line(x+474, y+300, x+500, y+250); //right arm 
+  line(x+500, y+250, x+490, y+238); //right arm finger left
+  line(x+500, y+250, x+510, y+238); //right arm finger right
+  line(x+500, y+250, x+500, y+234); //right arm finger middle
 
-//right arm
-line(474, 300, 500, 250); //right arm 
-line(500, 250, 490, 238); //right arm finger left
-line(500, 250, 510, 238); //right arm finger right
-line(500, 250, 500, 234); //right arm finger middle
+  //details on body
+  fill(50); 
+  ellipse(x+300, y+400, 300, 300); //black circle 
 
-//details on body
-fill(50); 
-ellipse(300, 400, 300, 300); //black circle 
+  fill(255);
+  ellipse(x+250, y+300, 50, 50); //circle top left white
+  ellipse(x+350, y+500, 50, 50); //circle bottom right white
 
-fill(255);
-ellipse(250, 300, 50, 50); //circle top left white
-ellipse(350, 500, 50, 50); //circle bottom right white
+  fill(5);
+  ellipse(x+250, y+300, 10, 25); //circle top left black
+  ellipse(x+350, y+500, 10, 25); //circle bottom right black
 
-fill(5);
-ellipse(250, 300, 10, 25); //circle top left black
-ellipse(350, 500, 10, 25); //circle bottom right black
-
-stroke(255);
-line(250, 325, 350, 475); //connecting line
+  stroke(255);
+  line(x+250, y+325, x+350, y+475); //connecting line
+}
