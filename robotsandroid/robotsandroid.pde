@@ -51,15 +51,15 @@ void setup() {
 //BG
 fill(#86BDFF);
 rect(0, 0,displayWidth, displayHeight);
-  filter( BLUR, 3 );
+   orientation(PORTRAIT);
    //Resolutions: 640x360=.5 1280x720=1 1920x1080=1.5 2560x1440=2 3840x2160=3
    
    int r = 1;
    
   //tells to draw robots at location
-  drawAt(-30 * r, -10 * r);
+
    drawAt(-60 * r, 100 * r);
-    drawAt(-180 * r, -150 * r);
+
 }
 
 //draw at specified location
@@ -81,7 +81,7 @@ void drawAt(int x, int y) {
   fill(250);
   arc(x + 980-d, y+ 270, 185, 185, -PI, 0);  // upper half of circle
 
-  filter( BLUR, 6 );
+
   //BB8Shadow
 
 
@@ -110,7 +110,7 @@ void drawAt(int x, int y) {
   ellipse(x+ 976, y+ 545, 110, 10 );
 
 
-  filter( BLUR, 3 );
+  
 
   //antenna
   fill(50);
