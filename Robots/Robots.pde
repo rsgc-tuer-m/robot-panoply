@@ -1,49 +1,44 @@
-// Create the canvas
-size(600, 600);
-
-// Add code below to make your preferred
-// robot, according to your plan.
+//This function runs once in your sketch
+void setup() {
+  // Create the canvas
+  size(600, 600);
 //
-// NOTE: Before you begin coding, please
-//       post a clear photograph of your plans
-//       to Sesame.
-//
-// NOTE: Please commit to GitHub repository
-//       in stages – as each "part" of your
-//       robot is finished.
+drawAt(50, 200);
+}
 
-rect(200,0,150,150);
+//To draw my robot at the specidied location
+void drawAt(int x, int y, float horizontalScale, float verticalScale) {
+  rect(x + 200, y + 0, 150, 150);
+  fill(0);
+  ellipse(x + 270, y + 200, 200, 200);
 
-fill(0);
-ellipse(270,200, 200, 200);
+  fill(0);
+  rect(x + 170, y + 130, 200, 200);
 
-fill(0);
-rect(170,130,200,200);
+  fill(0);
+  ellipse(x + 240, y + 50, 50, 50);
 
-fill(0);
-ellipse(240,50,50,50);
+  fill(255);
+  ellipse(x + 240, y + 50, 50, 50);
 
-fill(255);
-ellipse(240,50,50,50);
+  fill(0);
+  ellipse(x + 310,y +  50, 50, 50);
 
-fill(0);
-ellipse(310,50,50,50);
+  fill(255);
+  ellipse(x + 310, y + 50, 50, 50);
 
-fill(255);
-ellipse(310,50,50,50);
+  fill(0);
+  ellipse(x + 200, y + 300, 200, 200);
 
-fill(0);
-ellipse(200,300, 200, 200);
+  fill(0);
+  ellipse(x + 330, y + 300, 200, 200);
 
+  fill(255);
+  rect(x + 180, y + 395, 50, 150);
 
-fill(0);
-ellipse(330,300, 200, 200);
+  fill(255);
+  rect(x + 300, y + 395, 50, 150);
 
-fill(255);
-rect(180,395,50,150);
-
-fill(255);
-rect(300,395,50,150);
-
-fill(255);
-rect(170,130,200,270);
+  fill(255);
+  rect(x + 170, y + 130, 200, 270);
+}
