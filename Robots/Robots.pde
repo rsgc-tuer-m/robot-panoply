@@ -34,7 +34,7 @@ float fDiamter = lWidth;
 void setup() { //runs once
   size(800, 800);
   background(255);
-  drawAt(0, 0, 0.5, 0.5);
+  drawAt2(0, 0, 0.5, 0.5);
 }
 
  void drawAt(int x, int y, float horizontalScale, float verticalScale) {
@@ -117,6 +117,8 @@ void setup() { //runs once
    ellipse(cx, cy, 15, 15); //draw anchor point
    //draw orange spots like on bb8
    fill(255,179,0);
-   ellipse(cx + (width/4)*cHorizontal, cy + (height/4)*cVertical, 100*cHorizontal, 100*cVertical);
+   ellipse(cx + (width/2)*cHorizontal, cy + (height/2 + 120)*cVertical, 100*cHorizontal, 100*cVertical);
+   ellipse(cx + (width/2 + 80)*cHorizontal, cy + (height/2 + 220)*cVertical, 100*cHorizontal, 100*cVertical);
+   ellipse(cx + (width/2 - 80)*cHorizontal, cy + (height/2 + 220)*cVertical, 100*cHorizontal, 100*cVertical);
 
  }
