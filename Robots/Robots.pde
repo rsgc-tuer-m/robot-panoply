@@ -31,167 +31,69 @@ float fx = lx + lWidth/2;
 float fy = ly + lHeight + lWidth/2 - 10;
 float fDiamter = lWidth;
 
-//extra ints to replace the offset numbers
-float off1;
-float off2;
-float off3;
-float off4;
-float off5;
-float off6;
-float off7;
-float off8;
-float off9;
-float off10;
-float off11;
-float off12;
-float off13;
-float off14;
-float off15;
-float off16;
-float off17;
-float off18;
-float off19;
-float off20;
-float off21;
-float off22;
-float off23;
-float off24;
-float off25;
-float off26;
-float off27;
-float off28;
-float off29;
-float off30;
-float off31;
-
 void setup() { //runs once
   size(800, 800);
   background(255);
   //drawAt(100, 100, 1, 1);
-  drawAt2(0, 0, 0.5, 0.5);
+  drawAt(0, 0, 0.5, 0.5);
 
 }
 
  void drawAt(int x, int y, float horizontalScale, float verticalScale) {
-   //set variables to be multiplied by verticalScale and horizontalScale
-   tx = x + tx;
-   ty = y + ty;
-   tWidth = tWidth * horizontalScale;
-   tHeight = tHeight * verticalScale;
-   hx = x + hx;
-   hy = y + hy;
-   hDiameter = hDiameter * horizontalScale;
-   ex = x + ex;
-   ey = y + ey;
-   eDiameter = eDiameter * horizontalScale;
-   mx = x + mx;
-   my = y + my;
-   mWidth = mWidth * horizontalScale;
-   mHeight = mHeight * verticalScale;
-   ax = x + ax;
-   ay = y + ay;
-   aWidth = aWidth * horizontalScale;
-   aHeight = aHeight * verticalScale;
-   lx = x + lx;
-   ly = y + ly;
-   lWidth = lWidth * horizontalScale;
-   lHeight = lHeight * verticalScale;
-   fx = x + fx;
-   fy = y+ fy;
-   fDiamter = fDiamter * horizontalScale;
-   off1 = x + (-10);
-   off2 = x - 60;
-   off3 = x + 8;
-   off4 = x + 12;
-   off5 = x + 16;
-   off6 = x + 20;
-   off7 = x + 24;
-   off8 = x + 28;
-   off9 = x + 32;
-   off10 = x + 36;
-   off11 = x + 40;
-   off12 = x + 44;
-   off13 = y + (-15);
-   off14 = y + 50;
-   off15 = 25 * horizontalScale;
-   off16 = x + (-65);
-   off17 = x + 65;
-   off18 = 10 * horizontalScale;
-   off19 = x + 22;
-   off20 = y + 22;
-   off21 = x + 26;
-   off22 = x + 24;
-   off23 = x + 75;
-   off24 = y + 3;
-   off25 = 3*horizontalScale;
-   off26 = 45;
-   off27 = 10;
-   off28 = 100;
-   off29 = 4;
-   off30 = 50;
-   off31 = 75;
-
-
-
-   fill(255);
-   rect(tx, ty, tWidth, tHeight);
-   ellipse(hx, hy - off1, hDiameter, hDiameter);
-   fill(0); //make eyes for the robot that will be the color black
-   ellipse(ex, ey, eDiameter, eDiameter);
-   // draw other eye
-   ellipse(ex + off2, ey, eDiameter, eDiameter);
-   //draw mouth
-   fill(209);
-   rect(mx, my, mWidth, mHeight);
-   // draw lines in the mouth creating the old school boxy robot look
-/*
-   line(mx + off3, my, mx + off3, my + mHeight);
-   line(mx + off4, my, mx + off4, my + mHeight);
-   line(mx + off5, my, mx + off5, my + mHeight);
-   line(mx + off6, my, mx + off6, my + mHeight);
-   line(mx + off7, my, mx + off7, my + mHeight);
-   line(mx + off8, my, mx + off8, my + mHeight);
-   line(mx + off9, my, mx + off9, my + mHeight);
-   line(mx + off10, my, mx + off10, my + mHeight);
-   line(mx + off11, my, mx + off11, my + mHeight);
-   line(mx + off12, my, mx + off12, my + mHeight);
-   */
-   //draw arms
+  fill(255);
+  rect(x + (tx*horizontalScale), y + (ty * verticalScale), tWidth*horizontalScale, tHeight*verticalScale);
+  ellipse(x + hx*horizontalScale, y + (hy - 90)*verticalScale, hDiameter*horizontalScale, hDiameter*verticalScale);
+  fill(0); //make eyes for the robot that will be the color black
+  ellipse(x + ex*horizontalScale, y + ey*verticalScale, eDiameter*horizontalScale, eDiameter*verticalScale);
+  // draw other eye
+  ellipse(x + (ex + 40)*horizontalScale, y + ey*verticalScale, eDiameter*horizontalScale, eDiameter*verticalScale);
+  //draw mouth
   fill(209);
-  rect(ax, ay - off13, aWidth, aHeight); // left arm
-  rect(ax + aWidth + tWidth, ay - off13, aWidth, aHeight); // right Arm
+  rect(mx*horizontalScale, my*verticalScale, mWidth*horizontalScale, mHeight*verticalScale);
+  // draw lines in the mouth creating the old school boxy robot look
+  line(x + (mx + 8)*horizontalScale, my*horizontalScale, x + (mx + 8)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 12)*horizontalScale, y + my*verticalScale, x +(mx + 12)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 16)*horizontalScale, y + my*verticalScale, x + (mx + 16)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 20)*horizontalScale, y + my*verticalScale, x + (mx + 20)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 24)*horizontalScale, y + my*verticalScale, x + (mx + 24)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 28)*horizontalScale, y + my*verticalScale, x + (mx + 28)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 32)*horizontalScale, y + my*verticalScale, x + (mx + 32)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 36)*horizontalScale, y + my*verticalScale, x + (mx + 36)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 40)*horizontalScale, y + my*verticalScale, x + (mx + 40)*horizontalScale, y + (my + mHeight)*verticalScale);
+  line(x + (mx + 44)*horizontalScale, y + my*verticalScale, x + (mx + 44)*horizontalScale, y + (my + mHeight)*verticalScale);
+  //draw arms
+  fill(209);
+  rect(x + ax*horizontalScale, y + (ay - 5)*verticalScale, aWidth*horizontalScale, aHeight*verticalScale); // left arm
+  rect(x + (ax + aWidth + tWidth)*horizontalScale, y + (ay - 5)*verticalScale, aWidth*horizontalScale, aHeight*verticalScale); // right Arm
   // draw Iron Man type circle in the middle
   fill(255, 174, 0);
-  ellipse(tx + tWidth/2, ty + off14 - off30, hDiameter - off15, hDiameter - off15);
-  ellipse(tx + tWidth/2 - off16 - off26, ty + off14 - off30, hDiameter/2 - off18, hDiameter/2 - off18);
-  ellipse(tx + tWidth/2 + off17 - off31 - off29 - 2, ty + off14 - off30, hDiameter/2 - off18, hDiameter/2 - off18);
+  ellipse(x + (tx + tWidth/2)*horizontalScale, y + (ty + 50)*verticalScale, (hDiameter - 25)*horizontalScale, (hDiameter - 25)*verticalScale);
+  ellipse(x + (tx + tWidth/2 - 65)*horizontalScale, y + (ty + 50)*verticalScale, (hDiameter/2 - 10)*horizontalScale, (hDiameter/2 - 10)*verticalScale);
+  ellipse(x + (tx + tWidth/2 + 65)*horizontalScale, y + (ty + 50)*verticalScale, (hDiameter/2 - 10)*horizontalScale, (hDiameter/2 - 10)*verticalScale);
   //draw feet
-  ellipse(fx, fy, fDiamter, fDiamter);
+  ellipse(x + fx*horizontalScale, y + fy*verticalScale, fDiamter*horizontalScale, fDiamter*verticalScale);
   noStroke();
   fill(255);
-  rect(fx - fDiamter, ly + lHeight + off19, hDiameter, hDiameter);
+  rect(x + (fx - fDiamter)*horizontalScale, y + (ly + lHeight + 22)*verticalScale, hDiameter*horizontalScale, hDiameter*verticalScale);
   fill(0);
   stroke(5);
-  line(fx - fDiamter + off21 - off28, ly + lHeight + off20 - off28, fx + off22 - off28, ly + lHeight + off20 - off28); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
+  line(x + (fx - fDiamter + 26)*horizontalScale, y + (ly + lHeight + 22)*verticalScale, x + (fx - fDiamter + 24 + fDiamter)*horizontalScale, y + (ly + lHeight + 22)*verticalScale); //draw line where the rect overlaps circle to give the impression of a semicircle with a stroke around it
   // draw left foot
   fill(255, 174, 0);
-  ellipse(fx - off23 + off28, ly + lHeight + fDiamter/2 - off27, fDiamter, fDiamter);
+  ellipse(x + (fx - 75)*horizontalScale, y + (ly + lHeight + fDiamter/2 - 10)*verticalScale, fDiamter*horizontalScale, fDiamter*verticalScale);
   fill(255);
   noStroke();
-  rect(fx - off23 - fDiamter, ly + lHeight + fDiamter/2 - off24 - off30, hDiameter + off25, fDiamter);
+  rect(x + (fx - 75 - fDiamter)*horizontalScale, y + (ly + lHeight + fDiamter/2 - 3)*verticalScale, (hDiameter + 3)*horizontalScale, fDiamter*verticalScale);
   stroke(5);
   fill(0);
-  line(fx - off28, ly + lHeight + fDiamter/2 - off29, fx - off30, ly + lHeight + fDiamter/2 - off29);
-  fill(255);
-  noStroke();
-  rect(fx - off23 - fDiamter + off28, ly + lHeight + fDiamter/2 - off24 + off28, hDiameter + off25, fDiamter);
-  //fill(0);
-  rect(fx - off23 - fDiamter + off28*2, ly + lHeight + fDiamter/2 - off24 + off28 + 1, hDiameter + off25, fDiamter);
-//draw legs
+  line(x + (fx - 100)*horizontalScale, y + (ly + lHeight + fDiamter/2 - 4)*verticalScale, x + (fx - 50)*horizontalScale, y + (ly + lHeight + fDiamter/2 - 4)*verticalScale);
+  //draw legs
   stroke(5);
   fill(209);
-  rect(lx, ly, tWidth/4, tHeight/2); //left leg
-  rect(lx - aWidth - off26, ly, lWidth, lHeight); //right leg
+  rect(x + lx*horizontalScale, y + ly*verticalScale, (tWidth/4)*horizontalScale, (tHeight/2)*verticalScale); //left leg
+  rect(x + (lx - aWidth - 45)*horizontalScale,  y + ly*verticalScale, lWidth*horizontalScale, lHeight*verticalScale); //right leg
+  //draw shoulders
+  //triangle(x + (ax + awidth)*horizontalScale, )
  }
 
  void drawAt2(int cx, int cy, float cHorizontal, float cVertical) { //function drawing circlular bot
@@ -209,6 +111,9 @@ void setup() { //runs once
    fill(255);
    ellipse(cx + (width/2)*cHorizontal, cy + (height/2 + 200)*cVertical, 300*cHorizontal, 300*cVertical);
    fill(0);
-   ellipse(cx, cy, 15, 15);
+   ellipse(cx, cy, 15, 15); //draw anchor point
+   //draw orange spots like on bb8
+   fill(255,179,0);
+   ellipse(cx + (width/4)*cHorizontal, cy + (height/4)*cVertical, 100*cHorizontal, 100*cVertical);
 
  }
