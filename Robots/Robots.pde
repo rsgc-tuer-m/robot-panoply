@@ -34,12 +34,13 @@ float fDiamter = lWidth;
 void setup() { //runs once
   size(800, 800);
   background(255);
-  //drawAt(100, 100, 1, 1);
   drawAt(0, 0, 0.5, 0.5);
-
 }
 
  void drawAt(int x, int y, float horizontalScale, float verticalScale) {
+  fill(255, 0, 213);
+  //draw cape at the beginning to layer it behind the other shapes
+  rect(x + tx*horizontalScale, y + ty*verticalScale, tWidth*horizontalScale, (tHeight*2 - lHeight)*verticalScale);
   fill(255);
   rect(x + (tx*horizontalScale), y + (ty * verticalScale), tWidth*horizontalScale, tHeight*verticalScale);
   ellipse(x + hx*horizontalScale, y + (hy - 90)*verticalScale, hDiameter*horizontalScale, hDiameter*verticalScale);
@@ -93,7 +94,9 @@ void setup() { //runs once
   rect(x + lx*horizontalScale, y + ly*verticalScale, (tWidth/4)*horizontalScale, (tHeight/2)*verticalScale); //left leg
   rect(x + (lx - aWidth - 45)*horizontalScale,  y + ly*verticalScale, lWidth*horizontalScale, lHeight*verticalScale); //right leg
   //draw shoulders
-  //triangle(x + (ax + awidth)*horizontalScale, )
+  fill(255, 0, 213);
+  triangle(x + (ax + aWidth)*horizontalScale, y + (ty + aWidth)*verticalScale, x + (tx + tWidth/4)*horizontalScale, y + ty*verticalScale, tx*horizontalScale, ty*verticalScale); //left
+  triangle(x + (tx + tWidth)*horizontalScale, y + ty*verticalScale, x + (tx + tWidth)*horizontalScale, y + ay*verticalScale, x + (tx + tWidth - tWidth/4)*horizontalScale, ty*verticalScale); //right
  }
 
  void drawAt2(int cx, int cy, float cHorizontal, float cVertical) { //function drawing circlular bot
