@@ -10,8 +10,8 @@ void setup() {
 // draws robot at specified location
 void drawAt(int posX, int posY, float horizScale, float vertScale) {
   
-  fill(255);
   stroke(1);
+  rectMode(CORNER);
   
   fill(#aaaaaa);
   rect(posX + 25 * horizScale, posY + 0 * vertScale, 150 * horizScale, 50 * vertScale); //draw head
