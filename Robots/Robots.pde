@@ -1,26 +1,41 @@
-// Create the canvas
-size(400, 400);
+// This function runs once in your sketch
+void setup() {
 
-// Add code below to make your preferred
-// robot, according to your plan.
+  // Create the canvas
+  size(1000, 1000);
 
-// White background
-background(255);
+  // White background
+  background(255);
 
-// Draw head
-ellipse(200, 100, 100, 100);
+  // Ask the drawAt function to be run
+  drawAt(300, 200, 1.0, 1.0);
+  drawAt(500, 100, 1.0, 1.0);
 
-// Draw vision bar (eye)
-rectMode(CENTER);
-rect(200, 85, 50, 15);
+}
 
-// Draw body
-fill(200);  // grey
-ellipse(200, 400, 300, 600);
-fill(255);  // white
-ellipse(200, 400, 300, 500);
+// Purpose: To draw my robot at the specified location
+// Parameters:
+//          x      horizontal position, top-left
+//          y      vertical position, top-left
+void drawAt(int x, int y, float horizontalScale, float verticalScale) {
+  
+  // Draw head
+  fill(255);
+  ellipse(x + 200, y + 100, 100, 100);
 
-// Side wheels
-fill(100); // darker grey
-ellipse(60, 350, 100, 100); 
-ellipse(340, 350, 100, 100); 
+  // Draw vision bar (eye)
+  rectMode(CENTER);    // 
+  rect(x + 200, y + 85, 50, 15);
+
+  // Draw body
+  fill(200);  // grey
+  ellipse(x + 200, y + 400, 300, 600);
+  fill(255);  // white
+  ellipse(x + 200, y + 400, 300, 500);
+
+  // Side wheels
+  fill(100); // darker grey
+  ellipse(x + 60, y + 350, 100, 100); 
+  ellipse(x + 340, y + 350, 100, 100);
+  
+}
