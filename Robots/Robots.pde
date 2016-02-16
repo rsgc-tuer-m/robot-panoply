@@ -31,7 +31,7 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   // Draw body
   fill(200);  // grey
   arc(xAnchor + 200 * horizontalScale, yAnchor + 400 * verticalScale, 300 * horizontalScale, 600 * verticalScale, PI, TWO_PI);
-  fill(255);  // white
+  fill(245);  // light grey
   arc(xAnchor + 200 * horizontalScale, yAnchor + 400 * verticalScale, 300 * horizontalScale, 500 * verticalScale, PI, TWO_PI);
 
   // Side wheels
@@ -39,4 +39,7 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   ellipse(xAnchor + 60 * horizontalScale, yAnchor + 350 * verticalScale, 100 * horizontalScale, 100 * verticalScale); 
   ellipse(xAnchor + 340 * horizontalScale, yAnchor + 350 * verticalScale, 100 * horizontalScale, 100 * verticalScale);
   
+  // Complete body bottom
+  line(xAnchor + 60 * horizontalScale, yAnchor + 400 * verticalScale, xAnchor + 350 * horizontalScale, yAnchor + 400 * verticalScale); 
+
 }
