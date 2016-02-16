@@ -24,8 +24,7 @@ void setup() {
 
 DDRobot dadyburjorBot = new DDRobot();
 DDRobot2 dadyburjorBot2 = new DDRobot2();
-
-dadyburjorBot2.drawAt(displayWidth /8 ,displayHeight /6);
+dadyburjorBot2.drawAt(displayWidth /4, displayHeight/4);
 dadyburjorBot.drawAt(-displayWidth /14,-displayHeight/14);
 
   //Variable Index
