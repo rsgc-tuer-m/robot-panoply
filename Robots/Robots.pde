@@ -29,9 +29,9 @@ void drawAt(int x, int y, float horizontalScale, float verticalScale) {
 
   // Draw body
   fill(200);  // grey
-  ellipse(x + 200, y + 400, 300, 600);
+  arc(x + 200, y + 400, 300, 600, PI, TWO_PI);
   fill(255);  // white
-  ellipse(x + 200, y + 400, 300, 500);
+  arc(x + 200, y + 400, 300, 500, PI, TWO_PI);
 
   // Side wheels
   fill(100); // darker grey
