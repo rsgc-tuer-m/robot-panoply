@@ -42,4 +42,20 @@ void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale
   // Complete body bottom
   line(xAnchor + 60 * horizontalScale, yAnchor + 400 * verticalScale, xAnchor + 350 * horizontalScale, yAnchor + 400 * verticalScale); 
 
+  // Add "front and back" wheel
+  // (Back wheel is directly behind front wheel, so not visible when looking straight on)
+  rectMode(CENTER);
+  fill(100); // darker grey
+  rect(xAnchor + 200 * horizontalScale, yAnchor + 350 * verticalScale, 20 * horizontalScale, 100 * verticalScale);
+  rectMode(CORNER);
+
+  // Leg down to front wheel
+  fill(200);  // grey
+  noStroke();
+  quad(xAnchor + 185 * horizontalScale, yAnchor + 150 * verticalScale, xAnchor + 195 * horizontalScale, yAnchor + 300 * verticalScale, xAnchor + 205 * horizontalScale, yAnchor + 300 * verticalScale, xAnchor + 215 * horizontalScale, yAnchor + 150 * verticalScale);
+  strokeWeight(1);
+  stroke(0);
+  line(xAnchor + 185 * horizontalScale, yAnchor + 150 * verticalScale, xAnchor + 195 * horizontalScale, yAnchor + 300 * verticalScale); // left side
+  line(xAnchor + 205 * horizontalScale, yAnchor + 300 * verticalScale, xAnchor + 215 * horizontalScale, yAnchor + 150 * verticalScale); // right side
+
 }
