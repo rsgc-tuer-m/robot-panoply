@@ -15,28 +15,28 @@ void setup() {
 
 // Purpose: To draw my robot at the specified location
 // Parameters:
-//          x      horizontal position, top-left
-//          y      vertical position, top-left
-void drawAt(int x, int y, float horizontalScale, float verticalScale) {
+//          xAnchor      horizontal position, top-left
+//          yAnchor      vertical position, top-left
+void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale) {
   
   // Draw head
   fill(255);
-  ellipse(x + 200, y + 100, 100, 100);
+  ellipse(xAnchor + 200, yAnchor + 100, 100, 100);
 
   // Draw vision bar (eye)
   rectMode(CENTER);
   fill(225);
-  rect(x + 200, y + 85, 50, 15);
+  rect(xAnchor + 200, yAnchor + 85, 50, 15);
 
   // Draw body
   fill(200);  // grey
-  arc(x + 200, y + 400, 300, 600, PI, TWO_PI);
+  arc(xAnchor + 200, yAnchor + 400, 300, 600, PI, TWO_PI);
   fill(255);  // white
-  arc(x + 200, y + 400, 300, 500, PI, TWO_PI);
+  arc(xAnchor + 200, yAnchor + 400, 300, 500, PI, TWO_PI);
 
   // Side wheels
   fill(100); // darker grey
-  ellipse(x + 60, y + 350, 100, 100); 
-  ellipse(x + 340, y + 350, 100, 100);
+  ellipse(xAnchor + 60, yAnchor + 350, 100, 100); 
+  ellipse(xAnchor + 340, yAnchor + 350, 100, 100);
   
 }
