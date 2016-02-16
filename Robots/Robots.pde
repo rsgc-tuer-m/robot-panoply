@@ -24,7 +24,8 @@ void drawAt(int x, int y, float horizontalScale, float verticalScale) {
   ellipse(x + 200, y + 100, 100, 100);
 
   // Draw vision bar (eye)
-  rectMode(CENTER);    // 
+  rectMode(CENTER);
+  fill(225);
   rect(x + 200, y + 85, 50, 15);
 
   // Draw body
