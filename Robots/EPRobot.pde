@@ -33,7 +33,7 @@ class EPRobot {
    float fDiamter = lWidth;
 
 
-   void EPRobot() {}
+ void EPRobot() {/* Nothing to construct */}
 
    void drawAt(int x, int y, float horizontalScale, float verticalScale) {
     fill(255, 0, 213);
