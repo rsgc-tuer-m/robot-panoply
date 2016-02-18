@@ -2,7 +2,9 @@ class DDRobot2 {
   void DDRobot2(){
   }
 void drawAt(int x, int y) {
-  //ROBOT 2 (R2D2) Right
+  
+  
+  //This robot is R2D2
  noStroke();
   
   //distance between the 2 bots

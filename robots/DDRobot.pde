@@ -3,9 +3,11 @@ class DDRobot {
   }
 void drawAt(int x, int y) {
 
+  //This Robot is BB8
+  
   noStroke();
   
-  //distance between the 2 bots
+  //d= distance between the 2 bots
   //default 300
   //
 
