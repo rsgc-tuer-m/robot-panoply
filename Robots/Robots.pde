@@ -16,25 +16,25 @@ void setup() {
 // Parameters:
 //          xAnchor      horizontal position, top-left
 //          yAnchor      vertical position, top-left
-void drawAt(int x, int y, float horizontalScale, float verticalScale) {
+void drawAt(int x, int y, float xScale, float yScale) {
   
 fill(230); 
   //creat head
-  ellipse(200+ x, 100+ y, 80, 80); 
+  ellipse(200*xScale+ x, 100*yScale+ y, 80*xScale, 80*yScale); 
   //creats body
-  rect(150+ x, 100+ y, 100, 100);
+  rect(150*xScale+ x, 100*yScale+ y, 100*xScale, 100*yScale);
   //creat left leg
-  rect(150+ x, 200+ y, 20, 100);
+  rect(150*xScale+ x, 200*yScale+ y, 20*xScale, 100*yScale);
   //creat right leg
-  rect(230+ x, 200+ y, 20, 100);
+  rect(230*xScale+ x, 200*yScale+ y, 20*xScale, 100*yScale);
   //creat left eye
-  ellipse(185+ x, 80+ y, 10, 10);
+  ellipse(185*xScale+ x, 80*yScale+ y, 10*xScale, 10*yScale);
   //creat right eye
-  ellipse(215+ x, 80+ y, 10, 10);
+  ellipse(215*xScale+ x, 80*yScale+ y, 10*xScale, 10*yScale);
   //creat left arm
-  rect(50+ x, 100+ y, 100, 20); 
+  rect(50*xScale+ x, 100*yScale+ y, 100*xScale, 20*yScale); 
   //creat right arm
-  rect( 250+ x, 100+ y, 100, 20);
+  rect( 250*xScale+ x, 100*yScale+ y, 100*xScale, 20*yScale);
 
   //// Draw head
   //fill(255);
