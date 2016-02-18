@@ -96,27 +96,4 @@ class EPRobot {
     triangle(x + (ax + aWidth)*horizontalScale, y + (ty + aWidth)*verticalScale, x + (tx + tWidth/4)*horizontalScale, y + ty*verticalScale, x + tx*horizontalScale,  y + ty*verticalScale); //left
     triangle(x + (tx + tWidth)*horizontalScale, y + ty*verticalScale, x + (tx + tWidth)*horizontalScale, y + ay*verticalScale, x + (tx + tWidth - tWidth/4)*horizontalScale,  y + ty*verticalScale); //right
    }
-
-   void drawAt2(int cx, int cy, float cHorizontal, float cVertical) { //function drawing circlular bot
-     //draw head
-     stroke(5);
-     fill(255);
-     ellipse(cx + (width/2)*cHorizontal, cy + (height/2)*cVertical, 100*cHorizontal, 100*cVertical);
-     //draw eyes
-     fill(0);
-     ellipse(cx + (width/2 + 5) * cHorizontal, cy + (height/2)*cVertical, 25*cHorizontal, 25*cVertical);
-     //draw mouth
-     fill(209,209,209);
-     rect(cx + (380)*cHorizontal, cy + (425)*cVertical, 50*cHorizontal, 10*cVertical);
-     //draw BB8 style body
-     fill(255);
-     ellipse(cx + (width/2)*cHorizontal, cy + (height/2 + 200)*cVertical, 300*cHorizontal, 300*cVertical);
-     fill(0);
-     ellipse(cx, cy, 15, 15); //draw anchor point
-     //draw orange spots like on bb8
-     fill(255,179,0);
-     ellipse(cx + (width/2)*cHorizontal, cy + (height/2 + 120)*cVertical, 100*cHorizontal, 100*cVertical);
-     ellipse(cx + (width/2 + 80)*cHorizontal, cy + (height/2 + 220)*cVertical, 100*cHorizontal, 100*cVertical);
-     ellipse(cx + (width/2 - 80)*cHorizontal, cy + (height/2 + 220)*cVertical, 100*cHorizontal, 100*cVertical);
-  }
 }
