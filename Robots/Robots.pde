@@ -1,2 +1,2 @@
-void draw () {
+void setup() {
 }
