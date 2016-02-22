@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-void setup() {
-=======
 // This function runs once in your sketch
 void setup() {
 
@@ -17,5 +14,4 @@ void setup() {
   gordonBot.drawAt(100, 200, 1.0, 1.0);
   gordonBot.drawAt(500, 100, 0.5, 0.5);
 
->>>>>>> rsgc-ics2o-spring2016/master
 }
