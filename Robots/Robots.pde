@@ -1,9 +1,9 @@
 //This function runs once in your sketch
 void setup() {
   //Create the canvas and robot body
-  size(600, 600);
+  size(1000, 1000);
   EHRobot EliBot = new EHRobot();
-  EliBot.drawAt(100, 200, 0.3, 0.3); 
+  EliBot.drawAt(300, 100, 1.0, 1.0); 
   // Add code below to make your preferred
   // robot, according to your plan.
   //
