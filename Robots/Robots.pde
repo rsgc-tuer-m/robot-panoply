@@ -1,4 +1,7 @@
-// This function runs once in your sketch
 void setup() {
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> rsgc-ics2o-spring2016/master
