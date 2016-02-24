@@ -11,7 +11,7 @@ class ASPRobot {
 
 //head
     fill(255); 
-    ellipse((300+y)*horizontalScale, (150+y)*verticalScale, horizontalScale*150, verticalScale*150);
+    ellipse((300+x)*horizontalScale, (150+y)*verticalScale, horizontalScale*150, verticalScale*150);
 
  //antenae
     line((x+356)*horizontalScale, (y+100)*verticalScale, (x+356)*horizontalScale, (y+80)*verticalScale);
