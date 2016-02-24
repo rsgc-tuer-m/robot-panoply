@@ -7,13 +7,13 @@ void setup () {
 }
 
 void draw () {
-  
+
   background (50); 
 
   if (scene == 1) { 
+    //Scene 1 
 
-
-
+    //Window
     fill (25);   
     strokeWeight (2); 
     stroke (200); 
@@ -25,14 +25,16 @@ void draw () {
 
     JSSRobot jamiebot = new JSSRobot (); 
     jamiebot.drawAt (400, 325, 0.75, 0.75);
-
+    //Alderaan
     ASPRobot adam = new ASPRobot (); 
     adam.drawAt(2500, 850, 0.3, 0.3);
 
     MCRobot d = new MCRobot () ;
     d.drawAt (540, 460, 0.5, 0.5);
   } else if (scene == 2) {
-    text ("scene 2", 100, 100);
+    //Scene 2
+    DHRobot danielrobot = new DHRobot ();
+    danielrobot.drawAt (450, 400, 0.5, 0.5);
   }
 }
 
