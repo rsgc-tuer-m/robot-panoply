@@ -2,38 +2,38 @@
 // This function runs once in your sketch
 void setup() {
 
+
+
   // Create the canvas
   size(1000, 1000);
+}
 
-//Main guys daughter
+void draw() {
+  //Main guys daughter
 
-TMRobots timbot = new TMRobots();
+  TMRobots timbot = new TMRobots();
+  timbot.drawAt(500, 265, .75, .75);
 
-timbot.drawAt(500, 265, .75, .75);
+  //Dog
 
-//Dog
+  MTRobot michaelbot = new MTRobot();
+  michaelbot.drawAt(425, 300, .35, .35);
 
-MTRobot michaelbot = new MTRobot();
+  //Main Guy
 
-michaelbot.drawAt(425, 300, .35, .35);
+  DHRobot danbot = new DHRobot();
+  danbot.drawAt(1, 140, .6, .6);
 
-//Main Guy
+  //Wife of main guy
 
-DHRobot danbot = new DHRobot();
+  JSSRobot jamiebot = new JSSRobot();
+  jamiebot.drawAt(350, 230, .7, .7);
 
-danbot.drawAt(1, 140, .6, .6);
+  //Guy who scans
 
-//Wife of main guy
+  MCRobot mattbot = new MCRobot();
+  mattbot.drawAt(610, 130, 1.1, 1.1);
+}
 
-JSSRobot jamiebot = new JSSRobot();
-
-jamiebot.drawAt(350, 230, .7, .7);
-
-//Guy who scans
-
-MCRobot mattbot = new MCRobot();
-
-mattbot.drawAt(610, 130, 1.1, 1.1);
-
-
+void keyPressed() {
 }
