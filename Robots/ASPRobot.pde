@@ -19,43 +19,43 @@ class ASPRobot {
 
 //left eye
     fill(20); 
-    ellipse((x+275)*horizontalScale, (y+130)*verticalScale, 20*horizontalScale, 25*verticalScale);
+    ellipse(x+275 * horizontalScale, y+130 * verticalScale, 20*horizontalScale, 25*verticalScale);
 
  //right eye
     fill(20); 
-    ellipse((x+325)*horizontalScale, (y+130)*verticalScale, 20*horizontalScale, 25*verticalScale);
+    ellipse(x+325 * horizontalScale, y+130 * verticalScale, 20*horizontalScale, 25*verticalScale);
 
 //nose
-    triangle((x+300)*horizontalScale, (y+140)*verticalScale, (x+290)*horizontalScale, (y+160)*verticalScale, (x+310)*horizontalScale, (y+160)*verticalScale);
+    triangle(x+300 * horizontalScale, y+140 * verticalScale, x+290 * horizontalScale, y+160 * verticalScale, x+310 * horizontalScale, y+160 * verticalScale);
 
     //left Arm
-    line((x+127)*horizontalScale, (y+300)*verticalScale, (x+100)*horizontalScale, (y+250)*verticalScale); //left arm
-    line((x+100)*horizontalScale, (y+250)*verticalScale, (x+110)*horizontalScale, (y+238)*verticalScale); //left arm finer right
-    line((x+100)*horizontalScale, (y+250)*verticalScale, (x+90)*horizontalScale, (y+238)*verticalScale); //left arm finger left
-    line((x+100)*horizontalScale, (y+250)*verticalScale, (x+100)*horizontalScale, (y+234)*verticalScale); //left arm finger middle
+    line(x+127 * horizontalScale, y+300 * verticalScale, x+100 * horizontalScale, y+250 * verticalScale); //left arm
+    line(x+100 * horizontalScale, y+250 * verticalScale, x+110 * horizontalScale, y+238 * verticalScale); //left arm finer right
+    line(x+100 * horizontalScale, y+250 * verticalScale, x+90 * horizontalScale, y+238 * verticalScale); //left arm finger left
+    line(x+100 * horizontalScale, y+250 * verticalScale, x+100 * horizontalScale, y+234 * verticalScale); //left arm finger middle
 
     //right arm
-    line((x+474)*horizontalScale, (y+300)*verticalScale, (x+500)*horizontalScale, (y+250)*verticalScale); //right arm 
-    line((x+500)*horizontalScale, (y+250)*verticalScale, (x+490)*horizontalScale, (y+238)*verticalScale); //right arm finger left
-    line((x+500)*horizontalScale, (y+250)*verticalScale, (x+510)*horizontalScale, (y+238)*verticalScale); //right arm finger right
-    line((x+500)*horizontalScale, (y+250)*verticalScale, (x+500)*horizontalScale, (y+234)*verticalScale); //right arm finger middle
+    line(x+474 * horizontalScale, y+300 * verticalScale, x+500 * horizontalScale, y+250 * verticalScale); //right arm 
+    line(x+500 * horizontalScale, y+250 * verticalScale, x+490 * horizontalScale, y+238 * verticalScale); //right arm finger left
+    line(x+500 * horizontalScale, y+250 * verticalScale, x+510 * horizontalScale, y+238 * verticalScale); //right arm finger right
+    line(x+500 * horizontalScale, y+250 * verticalScale, x+500 * horizontalScale, y+234 * verticalScale); //right arm finger middle
 
     //details on body
 
     fill(50); 
-    ellipse((x+300)*horizontalScale, (y+400)*verticalScale, 300*horizontalScale, 300*verticalScale); //black circle 
+    ellipse(x+300 * horizontalScale, y+400 * verticalScale, 300*horizontalScale, 300*verticalScale); //black circle 
 
     stroke(255);
     fill(255);
-    ellipse((x+250)*horizontalScale, (y+300)*verticalScale, 50*horizontalScale, 50*verticalScale); //circle top left white
-    ellipse((x+350)*horizontalScale, (y+500)*verticalScale, 50*horizontalScale, 50*verticalScale); //circle bottom right white
+    ellipse(x+250 * horizontalScale, y+300 * verticalScale, 50*horizontalScale, 50*verticalScale); //circle top left white
+    ellipse(x+350 * horizontalScale, y+500 * verticalScale, 50*horizontalScale, 50*verticalScale); //circle bottom right white
     
     stroke (50); 
     fill(5);
-    ellipse((x+250)*horizontalScale, (y+300)*verticalScale, 10*horizontalScale, 25*verticalScale); //circle top left black
-    ellipse((x+350)*horizontalScale, (y+500)*verticalScale, 10*horizontalScale, 25*verticalScale); //circle bottom right black
+    ellipse(x+250 * horizontalScale, y+300 * verticalScale, 10*horizontalScale, 25*verticalScale); //circle top left black
+    ellipse(x+350 * horizontalScale, y+500 * verticalScale, 10*horizontalScale, 25*verticalScale); //circle bottom right black
     
     stroke(255); 
-    line((x+250)*horizontalScale, (y+325)*verticalScale, (x+350)*horizontalScale, (y+472)*verticalScale); //connecting line
+    line(x+250 * horizontalScale, y+325 * verticalScale, x+350 * horizontalScale, y+472 * verticalScale); //connecting line
   }
 }
