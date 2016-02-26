@@ -7,15 +7,15 @@ class ASPRobot {
     //body 
     strokeWeight(1); 
     fill(100);
-    ellipse((300+x)*horizontalScale, (400+y)*verticalScale, horizontalScale*400, verticalScale*400); 
+    ellipse(x + 300 * horizontalScale, y + 400 * verticalScale, horizontalScale*400, verticalScale*400); 
 
 //head
     fill(255); 
-    ellipse((300+x)*horizontalScale, (150+y)*verticalScale, horizontalScale*150, verticalScale*150);
+    ellipse(x + 300 * horizontalScale, y + 150 * verticalScale, horizontalScale*150, verticalScale*150);
 
  //antenae
-    line((x+356)*horizontalScale, (y+100)*verticalScale, (x+356)*horizontalScale, (y+80)*verticalScale);
-    line((x+350)*horizontalScale, (y+94)*verticalScale, (x+350)*horizontalScale, (y+60)*verticalScale);
+    line(x + 356 * horizontalScale, y + 100 * verticalScale, x + 356 * horizontalScale, y + 80 * verticalScale);
+    line(x + 350 * horizontalScale, y + 94 * verticalScale, x + 350 * horizontalScale, y + 60 * verticalScale);
 
 //left eye
     fill(20); 
