@@ -5,7 +5,7 @@ class ASPRobot {
   //Draw At
   void drawAt(int x, int y, float horizontalScale, float verticalScale) {
     //body 
-    strokeWeight(2); 
+    strokeWeight(1); 
     fill(100);
     ellipse((300+x)*horizontalScale, (400+y)*verticalScale, horizontalScale*400, verticalScale*400); 
 
