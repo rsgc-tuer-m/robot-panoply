@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // This function runs once in your sketch
 void setup() {
 
@@ -15,3 +16,7 @@ void setup() {
 void setup() {
 >>>>>>> rsgc-ics2o-spring2016/master
 }
+=======
+void setup() {
+} 
+>>>>>>> rsgc-ics2o-spring2016/master

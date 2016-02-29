@@ -3,7 +3,6 @@
 void setup() {
 
 
-
   // Create the canvas
   size(1000, 1000);
 }
